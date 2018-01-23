@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{115888A2-FEE6-D297-F317-7FAF871A1A94}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_MODULAR_UNITYENGINE_ASSEMBLIES;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\bullet.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Bomb.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Damage.cs" />
+     <Compile Include="Assets\Scripts\Enemies\enemy1\bulletScript.cs" />
+     <Compile Include="Assets\Scripts\Enemies\enemy1\bulletShooting.cs" />
+     <Compile Include="Assets\Scripts\Enemies\enemy1\enemy1.cs" />
+     <Compile Include="Assets\Scripts\Enemies\enemy2\explosionScript.cs" />
+     <Compile Include="Assets\Scripts\Enemies\enemy3.cs" />
+     <Compile Include="Assets\Scripts\Enemies\enemy4.cs" />
+     <Compile Include="Assets\Scripts\Enemies\enemy5.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Exploder.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Invisible.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Projectile.cs" />
+     <Compile Include="Assets\Scripts\GUI\Audioause.cs" />
+     <Compile Include="Assets\Scripts\GUI\Cointracker.cs" />
+     <Compile Include="Assets\Scripts\GUI\Healthtrack.cs" />
+     <Compile Include="Assets\Scripts\GUI\LevelLoad.cs" />
+     <Compile Include="Assets\Scripts\GUI\Music.cs" />
+     <Compile Include="Assets\Scripts\GUI\Pause.cs" />
+     <Compile Include="Assets\Scripts\GUI\Pause2.cs" />
+     <Compile Include="Assets\Scripts\GUI\Splash.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\Deathzones.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\Ending.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\Gold.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\Hulkpwup.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\LeftRight.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\Longjumppwup.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\Moneypwup.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\PlatformLength.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\Sniperpwup.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\Teleportpwup.cs" />
+     <Compile Include="Assets\Scripts\Platforms&amp;Collectables\UpDown.cs" />
+     <Compile Include="Assets\Scripts\Player\Chargestracker.cs" />
+     <Compile Include="Assets\Scripts\Player\Enemydestroyed1.cs" />
+     <Compile Include="Assets\Scripts\Player\Mario.cs" />
+     <Compile Include="Assets\Scripts\Player\Mario2.cs" />
+     <Compile Include="Assets\Scripts\Powerups\Followplayer.cs" />
+     <Compile Include="Assets\Scripts\Powerups\Powerups.cs" />
+     <Compile Include="Assets\Scripts\Procedural Generation\Destroy1.cs" />
+     <Compile Include="Assets\Scripts\Procedural Generation\Destroylevel2.cs" />
+     <Compile Include="Assets\Scripts\Procedural Generation\Destroylv1.cs" />
+     <Compile Include="Assets\Scripts\Procedural Generation\Generate.cs" />
+     <Compile Include="Assets\Scripts\Procedural Generation\Generatelv1.cs" />
+     <Compile Include="Assets\Scripts\Procedural Generation\Generatelv2.cs" />
+     <Compile Include="Assets\Scripts\Store\AddGold.cs" />
+     <Compile Include="Assets\Scripts\Store\Gold Multplier\GoldBar.cs" />
+     <Compile Include="Assets\Scripts\Store\Gold Multplier\Goldtrak.cs" />
+     <Compile Include="Assets\Scripts\Store\Gold Multplier\GoldUpgrade.cs" />
+     <Compile Include="Assets\Scripts\Store\Gold Multplier\PriceGold.cs" />
+     <Compile Include="Assets\Scripts\Store\Health\Healthbar.cs" />
+     <Compile Include="Assets\Scripts\Store\Health\Healthtracker.cs" />
+     <Compile Include="Assets\Scripts\Store\Health\Healthupgrade.cs" />
+     <Compile Include="Assets\Scripts\Store\Health\PriceHealth.cs" />
+     <Compile Include="Assets\Scripts\Store\ResetData.cs" />
+     <Compile Include="Assets\Scripts\Store\Speed Boost\PriceSpeed.cs" />
+     <Compile Include="Assets\Scripts\Store\Speed Boost\Speedbar.cs" />
+     <Compile Include="Assets\Scripts\Store\Speed Boost\Speedtracker.cs" />
+     <Compile Include="Assets\Scripts\Store\Speed Boost\SpeedUpgrade.cs" />
+     <Compile Include="Assets\Scripts\Store\Zero Gravity\OffZero.cs" />
+     <Compile Include="Assets\Scripts\Store\Zero Gravity\OnZero.cs" />
+     <Compile Include="Assets\Scripts\Store\Zero Gravity\PriceZero.cs" />
+     <Compile Include="Assets\Scripts\Store\Zero Gravity\ZeroBar.cs" />
+     <Compile Include="Assets\Scripts\Store\Zero Gravity\Zerogravityupgrade.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
